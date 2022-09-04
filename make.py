@@ -22,3 +22,4 @@ def make():
 
     # Get file path of image
     image_path = os.path.join(os.getcwd(), 'image.png')
+    return {'image_path': image_path}
