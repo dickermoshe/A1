@@ -4,8 +4,7 @@ from diffusers import StableDiffusionPipeline
 from torch import autocast
 from PIL.Image import Image
 
-if __name__ == '__main__':
-    # Save Token
+def make():
     os.mkdir('~/.huggingface')
     with open('~/.huggingface/token', 'w') as f:
         f.write(os.environ['HUGGINGFACE_TOKEN'])
